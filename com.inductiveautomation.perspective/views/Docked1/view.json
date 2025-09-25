@@ -237,8 +237,11 @@
         },
         "position": {
           "height": 0.0612,
+          "rotate": {
+            "anchor": "50% 146%"
+          },
           "width": 1,
-          "y": 0.1963
+          "y": 0.2228
         },
         "props": {
           "alignContent": "center",
