@@ -1,0 +1,432 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Table"
+        },
+        "position": {
+          "height": 0.3588,
+          "width": 0.5,
+          "x": 0.1299,
+          "y": 0.065
+        },
+        "propConfig": {
+          "props.data": {
+            "binding": {
+              "config": {
+                "enableValueCache": false,
+                "queryPath": "Query"
+              },
+              "type": "query"
+            }
+          }
+        },
+        "type": "ia.display.table"
+      },
+      {
+        "meta": {
+          "name": "ID"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.1075,
+          "x": 0.1125,
+          "y": 0.4713
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.0362,
+          "x": 0.0825,
+          "y": 0.47
+        },
+        "props": {
+          "text": "ID"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "height": 0.04,
+          "rotate": {
+            "anchor": "-44% -125%"
+          },
+          "width": 0.0962,
+          "x": 0.2313,
+          "y": 0.4725
+        },
+        "props": {
+          "text": "Name"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Name"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.15,
+          "x": 0.2988,
+          "y": 0.4725
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "TextField_1"
+        },
+        "position": {
+          "height": 0.0663,
+          "width": 0.18,
+          "x": 0.6238,
+          "y": 0.4713
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label_1"
+        },
+        "position": {
+          "height": 0.04,
+          "rotate": {
+            "anchor": "-44% -125%"
+          },
+          "width": 0.1487,
+          "x": 0.4674,
+          "y": 0.475
+        },
+        "props": {
+          "text": "Description"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": [
+              {
+                "config": {
+                  "script": "\tnamedQuery \u003d \"Query1\"\n\tparameters \u003d {\"ID\": self.getSibling(\"ID\").props.text, \"Name\":self.getSibling(\"Name\").props.text , \"Description\" :self.getSibling(\"TextField_1\").props.text}\n \n\tsystem.db.runNamedQuery(namedQuery, parameters)"
+                },
+                "scope": "G",
+                "type": "script"
+              },
+              {
+                "config": {
+                  "script": "\tself.getSibling(\"Table\").refreshBinding(\"props.data\")"
+                },
+                "scope": "G",
+                "type": "script"
+              }
+            ]
+          }
+        },
+        "meta": {
+          "name": "Button"
+        },
+        "position": {
+          "height": 0.0425,
+          "width": 0.1,
+          "x": 0.3488,
+          "y": 0.5925
+        },
+        "props": {
+          "text": "Update"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": [
+              {
+                "config": {
+                  "script": "\tnamedQuery \u003d \"Query2\"\n\tparameters \u003d {\"ID\": self.getSibling(\"Table\").props.selection.data[0].Did}\n \n\tsystem.db.runNamedQuery(namedQuery, parameters)"
+                },
+                "scope": "G",
+                "type": "script"
+              },
+              {
+                "config": {
+                  "script": "\tself.getSibling(\"Table\").refreshBinding(\"props.data\")"
+                },
+                "scope": "G",
+                "type": "script"
+              }
+            ]
+          }
+        },
+        "meta": {
+          "name": "Button_0"
+        },
+        "position": {
+          "height": 0.0425,
+          "width": 0.1,
+          "x": 0.5325,
+          "y": 0.59
+        },
+        "props": {
+          "text": "Delete"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "EquipmentSchedule"
+        },
+        "position": {
+          "height": 0.2938,
+          "width": 0.9375,
+          "x": 0.015,
+          "y": 0.6675
+        },
+        "props": {
+          "breakEvents": [
+            {
+              "endDate": {
+                "$": [
+                  "ts",
+                  0,
+                  1746201681107
+                ],
+                "$ts": 1746207000000
+              },
+              "startDate": {
+                "$": [
+                  "ts",
+                  0,
+                  1746201673610
+                ],
+                "$ts": 1746203400000
+              },
+              "style": {
+                "classes": ""
+              }
+            }
+          ],
+          "downtimeEvents": [
+            {
+              "color": "",
+              "endDate": {
+                "$": [
+                  "ts",
+                  0,
+                  1746201781124
+                ],
+                "$ts": 1746221400000
+              },
+              "itemId": 2,
+              "opacity": 1,
+              "startDate": {
+                "$": [
+                  "ts",
+                  0,
+                  1746201775163
+                ],
+                "$ts": 1746217800000
+              },
+              "style": {
+                "classes": ""
+              },
+              "underlay": false
+            }
+          ],
+          "items": [
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "",
+                "path": "",
+                "style": {}
+              },
+              "id": 1,
+              "label": "Machine",
+              "rowStyle": {
+                "classes": ""
+              }
+            },
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "",
+                "path": "",
+                "style": {}
+              },
+              "id": 2,
+              "label": "New Item",
+              "rowStyle": {
+                "classes": ""
+              }
+            },
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "",
+                "path": "",
+                "style": {}
+              },
+              "id": "",
+              "label": "New Item",
+              "rowStyle": {
+                "classes": ""
+              }
+            },
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "",
+                "path": "",
+                "style": {}
+              },
+              "id": "",
+              "label": "New Item",
+              "rowStyle": {
+                "classes": ""
+              }
+            },
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "",
+                "path": "",
+                "style": {}
+              },
+              "id": "",
+              "label": "New Item",
+              "rowStyle": {
+                "classes": ""
+              }
+            },
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "",
+                "path": "",
+                "style": {}
+              },
+              "id": "",
+              "label": "New Item",
+              "rowStyle": {
+                "classes": ""
+              }
+            },
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "",
+                "path": "",
+                "style": {}
+              },
+              "id": "",
+              "label": "New Item",
+              "rowStyle": {
+                "classes": ""
+              }
+            },
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "",
+                "path": "",
+                "style": {}
+              },
+              "id": "",
+              "label": "New Item",
+              "rowStyle": {
+                "classes": ""
+              }
+            },
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "",
+                "path": "",
+                "style": {}
+              },
+              "id": "",
+              "label": "New Item",
+              "rowStyle": {
+                "classes": ""
+              }
+            }
+          ],
+          "scheduledEvents": [
+            {
+              "endDate": {
+                "$": [
+                  "ts",
+                  0,
+                  1746201796524
+                ],
+                "$ts": 1746297000000
+              },
+              "eventId": 1,
+              "itemId": 2,
+              "label": "Scheduled Event",
+              "leadStyle": {
+                "classes": ""
+              },
+              "leadTime": 0,
+              "percentDone": 0,
+              "startDate": {
+                "$": [
+                  "ts",
+                  0,
+                  1746201792389
+                ],
+                "$ts": 1746124200000
+              },
+              "style": {
+                "classes": ""
+              }
+            }
+          ],
+          "selectedEvent": {
+            "eventId": 1,
+            "itemId": 2
+          }
+        },
+        "type": "ia.display.equipmentschedule"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "mode": "percent"
+    },
+    "type": "ia.container.coord"
+  }
+}

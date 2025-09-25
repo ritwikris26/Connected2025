@@ -1,0 +1,120 @@
+{
+  "pages": {
+    "/": {
+      "title": "",
+      "viewPath": "FirstPage"
+    },
+    "/admin": {
+      "title": "",
+      "viewPath": "Admin"
+    },
+    "/admin-breakpoint": {
+      "viewPath": "Admin breakpoint"
+    },
+    "/admin-small": {
+      "viewPath": "Admin small"
+    },
+    "/approved": {
+      "viewPath": "Approved"
+    },
+    "/breakpoint-view": {
+      "title": "",
+      "viewPath": "breakpoint view"
+    },
+    "/checkpopup": {
+      "viewPath": "checkpopup"
+    },
+    "/docked1": {
+      "title": "",
+      "viewPath": "Docked1"
+    },
+    "/fail-popup": {
+      "viewPath": "Fail popup"
+    },
+    "/firstpage": {
+      "title": "",
+      "viewPath": "FirstPage"
+    },
+    "/firstpage-small": {
+      "viewPath": "FirstPage small"
+    },
+    "/livepage": {
+      "title": "",
+      "viewPath": "LivePage"
+    },
+    "/rejectedpopup": {
+      "viewPath": "Rejectedpopup"
+    },
+    "/schedule table": {
+      "docks": {
+        "left": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 480,
+            "content": "push",
+            "handle": "autoHide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 150,
+            "viewParams": {},
+            "viewPath": "Docked1"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "Schedule table"
+    },
+    "/schedule1": {
+      "title": "",
+      "viewPath": "Schedule1"
+    },
+    "/success-popup": {
+      "viewPath": "Success popup"
+    },
+    "/user": {
+      "title": "",
+      "viewPath": "User"
+    },
+    "/user-breakpoint": {
+      "viewPath": "User breakpoint"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom",
+    "left": [
+      {
+        "anchor": "fixed",
+        "autoBreakpoint": 480,
+        "content": "push",
+        "handle": "autoHide",
+        "iconUrl": "",
+        "id": "",
+        "modal": false,
+        "resizable": false,
+        "show": "auto",
+        "size": 150,
+        "viewParams": {},
+        "viewPath": "Docked1"
+      }
+    ],
+    "top": [
+      {
+        "anchor": "fixed",
+        "autoBreakpoint": 480,
+        "content": "push",
+        "handle": "hide",
+        "iconUrl": "",
+        "id": "",
+        "modal": false,
+        "resizable": false,
+        "show": "visible",
+        "size": 55,
+        "viewParams": {},
+        "viewPath": "Docked2"
+      }
+    ]
+  }
+}

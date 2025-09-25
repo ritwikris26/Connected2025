@@ -1,0 +1,179 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "events": {
+          "component": {
+            "onAddEvent": {
+              "config": {
+                "script": "\tself.refreshBinding(\"props.data\")"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "contextMenu": {
+            "enabled": true,
+            "items": [
+              {
+                "children": [],
+                "icon": {
+                  "color": "",
+                  "path": "",
+                  "style": {}
+                },
+                "link": {
+                  "target": "self",
+                  "url": ""
+                },
+                "message": {
+                  "payload": {},
+                  "scope": "page",
+                  "type": ""
+                },
+                "method": {
+                  "name": "",
+                  "params": {}
+                },
+                "style": {
+                  "classes": ""
+                },
+                "text": "menu-item",
+                "type": "link"
+              }
+            ]
+          },
+          "name": "EquipmentSchedule",
+          "tooltip": {
+            "enabled": true
+          }
+        },
+        "position": {
+          "height": 303.84,
+          "width": 758.16,
+          "x": 20.27324360961914,
+          "y": 216.12
+        },
+        "propConfig": {
+          "props.dateRange.endDate": {
+            "binding": {
+              "config": {
+                "polling": {
+                  "enabled": true,
+                  "rate": "30"
+                },
+                "queryPath": "MaxDate"
+              },
+              "transforms": [
+                {
+                  "expression": "{value}[0,0]",
+                  "type": "expression"
+                }
+              ],
+              "type": "query"
+            }
+          },
+          "props.dateRange.startDate": {
+            "binding": {
+              "config": {
+                "polling": {
+                  "enabled": true,
+                  "rate": "30"
+                },
+                "queryPath": "MinDate"
+              },
+              "transforms": [
+                {
+                  "expression": "{value}[0,0]",
+                  "type": "expression"
+                }
+              ],
+              "type": "query"
+            }
+          },
+          "props.scheduledEvents": {
+            "binding": {
+              "config": {
+                "polling": {
+                  "enabled": true,
+                  "rate": "30"
+                },
+                "queryPath": "Join1-EmpReq",
+                "returnFormat": "json"
+              },
+              "type": "query"
+            }
+          }
+        },
+        "props": {
+          "dateRange": {},
+          "deleteEnabled": false,
+          "items": [
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "",
+                "path": "",
+                "style": {}
+              },
+              "id": 1,
+              "label": "Ishita",
+              "rowStyle": {
+                "classes": ""
+              }
+            },
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "",
+                "path": "",
+                "style": {}
+              },
+              "id": 2,
+              "label": "Srishti",
+              "rowStyle": {
+                "classes": ""
+              }
+            }
+          ],
+          "selectedEvent": {
+            "eventId": 1,
+            "itemId": 1
+          }
+        },
+        "type": "ia.display.equipmentschedule"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 32,
+          "width": 80,
+          "x": 359.40525299072266,
+          "y": 152
+        },
+        "props": {
+          "style": {
+            "borderStyle": "solid"
+          },
+          "text": "Schedule"
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

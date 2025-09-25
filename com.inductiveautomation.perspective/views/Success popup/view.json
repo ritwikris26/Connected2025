@@ -1,0 +1,36 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 200,
+      "width": 200
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 173,
+          "width": 192,
+          "y": 7
+        },
+        "props": {
+          "style": {
+            "fontSize": 20,
+            "textAlign": "center"
+          },
+          "text": "Successfully added the Schedule."
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "success"
+    },
+    "type": "ia.container.coord"
+  }
+}

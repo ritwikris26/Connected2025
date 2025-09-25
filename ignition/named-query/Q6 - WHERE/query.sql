@@ -1,0 +1,1 @@
+SELECT COUNT(HCount) FROM Hello WHERE Hcount = 'Y'

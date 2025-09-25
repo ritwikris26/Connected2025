@@ -1,0 +1,262 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 364
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "events": {
+          "component": {
+            "onAddEvent": {
+              "config": {
+                "script": "\tself.refreshBinding(\"props.data\")"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "contextMenu": {
+            "enabled": true,
+            "items": [
+              {
+                "children": [],
+                "icon": {
+                  "color": "",
+                  "path": "",
+                  "style": {}
+                },
+                "link": {
+                  "target": "self",
+                  "url": ""
+                },
+                "message": {
+                  "payload": {},
+                  "scope": "page",
+                  "type": ""
+                },
+                "method": {
+                  "name": "",
+                  "params": {}
+                },
+                "style": {
+                  "classes": ""
+                },
+                "text": "menu-item",
+                "type": "link"
+              }
+            ]
+          },
+          "name": "EquipmentSchedule",
+          "tooltip": {
+            "enabled": true
+          }
+        },
+        "position": {
+          "height": 0.4437,
+          "width": 0.9396,
+          "x": 0.0216,
+          "y": 0.0839
+        },
+        "propConfig": {
+          "props.dateRange.endDate": {
+            "binding": {
+              "config": {
+                "polling": {
+                  "enabled": true,
+                  "rate": "30"
+                },
+                "queryPath": "MaxDate"
+              },
+              "transforms": [
+                {
+                  "expression": "{value}[0,0]",
+                  "type": "expression"
+                }
+              ],
+              "type": "query"
+            }
+          },
+          "props.dateRange.startDate": {
+            "binding": {
+              "config": {
+                "polling": {
+                  "enabled": true,
+                  "rate": "30"
+                },
+                "queryPath": "MinDate"
+              },
+              "transforms": [
+                {
+                  "expression": "{value}[0,0]",
+                  "type": "expression"
+                }
+              ],
+              "type": "query"
+            }
+          },
+          "props.scheduledEvents": {
+            "binding": {
+              "config": {
+                "polling": {
+                  "enabled": true,
+                  "rate": "30"
+                },
+                "queryPath": "Join1-EmpReq",
+                "returnFormat": "json"
+              },
+              "type": "query"
+            }
+          }
+        },
+        "props": {
+          "dateRange": {},
+          "deleteEnabled": false,
+          "items": [
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "#804600",
+                "path": "material/person",
+                "style": {}
+              },
+              "id": 1,
+              "label": "Ishita",
+              "rowStyle": {
+                "classes": ""
+              }
+            },
+            {
+              "headerStyle": {
+                "classes": ""
+              },
+              "iconConfig": {
+                "color": "#800000",
+                "path": "material/person",
+                "style": {}
+              },
+              "id": 2,
+              "label": "Srishti",
+              "rowStyle": {
+                "classes": ""
+              }
+            }
+          ],
+          "selectedEvent": {
+            "eventId": 1,
+            "itemId": 1
+          }
+        },
+        "type": "ia.display.equipmentschedule"
+      },
+      {
+        "meta": {
+          "name": "SimpleGauge_0"
+        },
+        "position": {
+          "height": 0.152,
+          "width": 0.4918,
+          "x": 0.0097,
+          "y": 0.5444
+        },
+        "type": "ia.chart.simple-gauge"
+      },
+      {
+        "meta": {
+          "name": "SimpleGauge_1"
+        },
+        "position": {
+          "height": 0.1363,
+          "width": 0.4725,
+          "x": 0.0222,
+          "y": 0.706
+        },
+        "type": "ia.chart.simple-gauge"
+      },
+      {
+        "meta": {
+          "name": "SimpleGauge_2"
+        },
+        "position": {
+          "height": 0.1313,
+          "width": 0.511,
+          "x": 0.481,
+          "y": 0.7074
+        },
+        "type": "ia.chart.simple-gauge"
+      },
+      {
+        "meta": {
+          "name": "SimpleGauge"
+        },
+        "position": {
+          "height": 0.1437,
+          "width": 0.4918,
+          "x": 0.4901,
+          "y": 0.5473
+        },
+        "type": "ia.chart.simple-gauge"
+      },
+      {
+        "meta": {
+          "name": "Welcome"
+        },
+        "position": {
+          "height": 0.0487,
+          "width": 0.7363,
+          "x": 0.0175,
+          "y": 0.0232
+        },
+        "props": {
+          "style": {
+            "color": "#0000FF",
+            "fontFamily": "Merriweather",
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "textAlign": "center"
+          },
+          "text": "Welcome to Task Scheduler !!"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Login"
+        },
+        "position": {
+          "height": 0.0375,
+          "width": 0.1484,
+          "x": 0.808,
+          "y": 0.0284
+        },
+        "props": {
+          "image": {
+            "height": 10
+          },
+          "style": {
+            "fontSize": 15
+          },
+          "text": "Login",
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.input.button"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "mode": "percent"
+    },
+    "type": "ia.container.coord"
+  }
+}

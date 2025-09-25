@@ -1,0 +1,1 @@
+ALTER TABLE Hello ADD HCount VARCHAR

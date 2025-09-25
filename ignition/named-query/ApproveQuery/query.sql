@@ -1,0 +1,1 @@
+UPDATE Request SET Status = 'Approved' FROM Request JOIN JER ON Request.RID = JER.eventId

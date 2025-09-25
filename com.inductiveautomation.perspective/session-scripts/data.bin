@@ -1,0 +1,1 @@
+{"onStartup":"\tsystem.perspective.navigate(/firstpage)","onBarcodeDataReceived":"\t","onBluetoothReceived":"\t","onAccelerometerDataReceived":"\t","onNdefDataReceived":"\t"}

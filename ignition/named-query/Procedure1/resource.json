@@ -1,0 +1,55 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "NewConnection",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "97367d5cc747086f84cb8303a5cdfe11b4f5cf7d15917c642aa944e57f9b66c5",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "Ishita",
+      "timestamp": "2025-04-10T07:25:27Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "Name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "Topic",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "SDateTime",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "EDateTime",
+        "sqlType": 7
+      }
+    ]
+  }
+}

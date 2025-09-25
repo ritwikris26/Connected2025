@@ -1,0 +1,203 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 40,
+      "width": 1150
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Welcome",
+          "tooltip": {
+            "style": {
+              "backgroundColor": "#FFAC47"
+            }
+          }
+        },
+        "position": {
+          "height": 0.8267,
+          "width": 0.4307,
+          "x": 0.249,
+          "y": 0.1266
+        },
+        "props": {
+          "style": {
+            "fontFamily": "Merriweather",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "textAlign": "center"
+          },
+          "text": "WELCOME TO GEC LAB NOIDA"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {},
+              "scope": "C",
+              "type": "logout"
+            }
+          }
+        },
+        "meta": {
+          "name": "Logout"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.075,
+          "x": 0.9,
+          "y": 0.6575
+        },
+        "props": {
+          "image": {
+            "height": 10
+          },
+          "style": {
+            "fontSize": 15
+          },
+          "text": "Logout",
+          "textStyle": {
+            "fontSize": 10
+          }
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "Role"
+        },
+        "position": {
+          "height": 0.1467,
+          "width": 0.0789,
+          "x": 0.9,
+          "y": 0.4532
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "session.props.auth.user.roles[0]"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 8
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Username"
+        },
+        "position": {
+          "height": 0.2933,
+          "width": 0.0832,
+          "x": 0.9,
+          "y": 0.0568
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "session.props.auth.user.userName"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 10
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Dropdown"
+        },
+        "position": {
+          "height": 0.55,
+          "width": 0.0735,
+          "x": 0.8192,
+          "y": 0.1714
+        },
+        "propConfig": {
+          "props.value": {
+            "onChange": {
+              "enabled": null,
+              "script": "\tself.session.props.theme \u003d currentValue"
+            }
+          }
+        },
+        "props": {
+          "options": [
+            {
+              "label": "Light",
+              "value": "light"
+            },
+            {
+              "label": "Light Cool",
+              "value": "light-cool"
+            },
+            {
+              "label": "Light Warm",
+              "value": "light-warm"
+            },
+            {
+              "label": "Dark",
+              "value": "dark"
+            },
+            {
+              "label": "Dark Cool",
+              "value": "dark-cool"
+            },
+            {
+              "label": "Dark Warm",
+              "value": "dark-warm"
+            }
+          ],
+          "value": "dark"
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "meta": {
+          "name": "pentairlogo (1)"
+        },
+        "position": {
+          "height": 0.9375,
+          "width": 0.1435,
+          "y": 0.0278
+        },
+        "props": {
+          "fit": {
+            "mode": "percent"
+          },
+          "source": "/system/images/images.png"
+        },
+        "type": "ia.display.image"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "mode": "percent",
+      "style": {
+        "borderStyle": "double"
+      }
+    },
+    "type": "ia.container.coord"
+  }
+}

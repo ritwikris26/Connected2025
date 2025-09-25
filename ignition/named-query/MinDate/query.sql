@@ -1,0 +1,1 @@
+SELECT MIN(startDate) FROM JER

@@ -1,0 +1,481 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 600,
+      "width": 1164
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label_3"
+        },
+        "position": {
+          "height": 0.0467,
+          "width": 0.9966,
+          "x": 0.0025,
+          "y": 0.0034
+        },
+        "props": {
+          "style": {
+            "borderStyle": "solid",
+            "textAlign": "center"
+          },
+          "text": "GEC LAB LIVE DATA"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.0009,
+          "y": 0.05
+        },
+        "props": {
+          "params": {
+            "Name": "TTIC LAB"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_0"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.144,
+          "y": 0.05
+        },
+        "props": {
+          "params": {
+            "Name": "FILTRATION"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_1"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.2872,
+          "y": 0.05
+        },
+        "props": {
+          "params": {
+            "Name": "MICROBIOLOGY"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_2"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.4302,
+          "y": 0.05
+        },
+        "props": {
+          "params": {
+            "Name": "POOL AREA"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_3"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.5724,
+          "y": 0.05
+        },
+        "props": {
+          "params": {
+            "Name": "PUMP AREA - 1"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_4"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.7155,
+          "y": 0.05
+        },
+        "props": {
+          "params": {
+            "Name": "PUMP AREA - 2"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_5"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.8586,
+          "y": 0.05
+        },
+        "props": {
+          "params": {
+            "Name": "PUMP AREA - 3"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_6"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.7155,
+          "y": 0.3713
+        },
+        "props": {
+          "params": {
+            "Name": "EXHUAST \u0026 FAN"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_7"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.8586,
+          "y": 0.3713
+        },
+        "props": {
+          "params": {
+            "Name": "FITTER"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_8"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.5724,
+          "y": 0.3713
+        },
+        "props": {
+          "params": {
+            "Name": "ELECTRONIC LAB"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_9"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.4302,
+          "y": 0.3713
+        },
+        "props": {
+          "params": {
+            "Name": "IOT LAB"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_10"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.2872,
+          "y": 0.3713
+        },
+        "props": {
+          "params": {
+            "Name": "OPEN AREA"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_11"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.144,
+          "y": 0.3713
+        },
+        "props": {
+          "params": {
+            "Name": "WORKSHOP LAB"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_12"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.0009,
+          "y": 0.3713
+        },
+        "props": {
+          "params": {
+            "Name": "PUMP AREA - 4"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_13"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.7155,
+          "y": 0.696
+        },
+        "props": {
+          "params": {
+            "Name": "SHAFT A WATER"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_14"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.8586,
+          "y": 0.696
+        },
+        "props": {
+          "params": {
+            "Name": "SHAFT B WATER"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_15"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.5724,
+          "y": 0.696
+        },
+        "props": {
+          "params": {
+            "Name": "THREE PHASE"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_16"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.4302,
+          "y": 0.696
+        },
+        "props": {
+          "params": {
+            "Name": "SINGLE PHASE"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_17"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.2872,
+          "y": 0.696
+        },
+        "props": {
+          "params": {
+            "Name": "CONVERTER"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_18"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.144,
+          "y": 0.696
+        },
+        "props": {
+          "params": {
+            "Name": "MOTOR TEST LAB"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_19"
+        },
+        "position": {
+          "height": 0.3,
+          "width": 0.14,
+          "x": 0.0009,
+          "y": 0.696
+        },
+        "props": {
+          "params": {
+            "Name": "RPDB WPDB"
+          },
+          "path": "NestedView/LabData",
+          "style": {
+            "borderStyle": "groove"
+          }
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "mode": "percent"
+    },
+    "type": "ia.container.coord"
+  }
+}

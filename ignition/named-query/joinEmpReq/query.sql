@@ -1,0 +1,1 @@
+INSERT INTO JER SELECT E.ID AS itemId, R.RID AS eventId, R.SDateTime AS startDate, R.EDateTime AS endDate, R.Topic AS label, R.l AS leadTime FROM Emp AS E join Request AS R ON E.Name=R.Name WHERE R.RID NOT IN (SELECT eventId FROM JER)

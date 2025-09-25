@@ -1,0 +1,1 @@
+delete from Demo where Did = :ID

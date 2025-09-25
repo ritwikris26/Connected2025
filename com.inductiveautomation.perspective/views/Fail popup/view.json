@@ -1,0 +1,37 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 200,
+      "width": 200
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 141,
+          "width": 184,
+          "x": 9,
+          "y": 29
+        },
+        "props": {
+          "style": {
+            "fontSize": 20,
+            "textAlign": "center"
+          },
+          "text": "Schedule for this person already exists."
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "fail"
+    },
+    "type": "ia.container.coord"
+  }
+}

@@ -1,0 +1,1 @@
+DELETE FROM JER AS J JOIN Request AS R ON 

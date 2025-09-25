@@ -1,0 +1,33 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 200,
+      "width": 200
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "check"
+        },
+        "position": {
+          "height": 32,
+          "width": 187,
+          "x": 7.01,
+          "y": 90.01
+        },
+        "props": {
+          "text": "Please enter all the fiels."
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

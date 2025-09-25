@@ -1,0 +1,1 @@
+DELETE FROM Hello WHERE HID = :HID

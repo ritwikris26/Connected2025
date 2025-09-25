@@ -1,0 +1,16 @@
+{
+  "scope": "C",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "data.bin"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "Ishita",
+      "timestamp": "2025-03-19T11:04:37Z"
+    },
+    "lastModificationSignature": "78357620add97361cdca1815e007a089ee9961e9f723ec4bac9ccf5d49f13604"
+  }
+}

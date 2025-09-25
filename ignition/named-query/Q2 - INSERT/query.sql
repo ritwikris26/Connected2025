@@ -1,0 +1,1 @@
+INSERT INTO Hello VALUES (:HID, :HName, :HDes, :HCount)

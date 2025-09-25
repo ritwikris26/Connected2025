@@ -1,0 +1,331 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "HID",
+          "tooltip": {
+            "style": {
+              "backgroundColor": "#FFE8CC",
+              "borderStyle": "none",
+              "fill": "#FFE8CC",
+              "stroke": "#FFCA8A"
+            }
+          }
+        },
+        "position": {
+          "height": 0.055,
+          "rotate": {
+            "anchor": "50% 40%"
+          },
+          "width": 0.1025,
+          "x": 0.0362,
+          "y": 0.566
+        },
+        "props": {
+          "alignHorizontal_1": "center",
+          "style": {
+            "borderStyle": "solid",
+            "fill": "#FFE8CC",
+            "stroke": "#FFCA8A"
+          },
+          "text": " HID",
+          "textStyle": {
+            "fill": "#FFE8CC",
+            "stroke": "#FFCA8A"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "HName"
+        },
+        "position": {
+          "height": 0.0538,
+          "width": 0.1013,
+          "x": 0.0367,
+          "y": 0.667
+        },
+        "props": {
+          "style": {
+            "borderStyle": "solid",
+            "fill": "#FFE8CC",
+            "stroke": "#FFCA8A"
+          },
+          "text": " HName"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "HCount"
+        },
+        "position": {
+          "height": 0.0538,
+          "width": 0.1038,
+          "x": 0.0341,
+          "y": 0.8569
+        },
+        "props": {
+          "style": {
+            "borderStyle": "solid",
+            "fill": "#FFE8CC",
+            "stroke": "#FFCA8A"
+          },
+          "text": " HCount"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Hello"
+        },
+        "position": {
+          "height": 0.0525,
+          "width": 0.255,
+          "x": 0.3574,
+          "y": 0.0262
+        },
+        "props": {
+          "style": {
+            "borderStyle": "groove",
+            "fill": "#FFCCFF",
+            "outlineStyle": "solid",
+            "stroke": "#FF47FF"
+          },
+          "text": " Hello Manufacturing Unit"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "HName-TextField"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.1875,
+          "x": 0.1912,
+          "y": 0.6736
+        },
+        "props": {
+          "style": {
+            "borderStyle": "groove",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "HDes-TextField"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.1837,
+          "x": 0.1874,
+          "y": 0.7799
+        },
+        "props": {
+          "style": {
+            "overflowWrap": "normal",
+            "textAlign": "center",
+            "textOverflow": "ellipsis"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": [
+              {
+                "config": {
+                  "script": "\tnamedQuery \u003d \"Q2 - INSERT\"\n\tparameters \u003d {\"HID\": self.getSibling(\"HID-TextField\").props.text, \"HName\":self.getSibling(\"HName-TextField\").props.text, \"HDes\" :self.getSibling(\"HDes-TextField\").props.text, \"HCount\" :self.getSibling(\"HCount-TextField\").props.text}\n \tsystem.db.runNamedQuery(namedQuery, parameters)"
+                },
+                "scope": "G",
+                "type": "script"
+              },
+              {
+                "config": {
+                  "script": "\tself.getSibling(\"Table\").refreshBinding(\"props.data\")"
+                },
+                "scope": "G",
+                "type": "script"
+              }
+            ]
+          }
+        },
+        "meta": {
+          "name": "Update Button"
+        },
+        "position": {
+          "height": 0.0425,
+          "width": 0.1,
+          "x": 0.1737,
+          "y": 0.9373
+        },
+        "propConfig": {
+          "props.enabled": {
+            "binding": {
+              "config": {
+                "expression": "if({session.custom.Roles.Admin},true,false)"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "text": "Update"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": [
+              {
+                "config": {
+                  "script": "\tnamedQuery \u003d \"Q4 - DELETE\"\n\tparameters \u003d {\"HID\": self.getSibling(\"Table\").props.selection.data[0].HID}\n \n\tsystem.db.runNamedQuery(namedQuery, parameters)"
+                },
+                "scope": "G",
+                "type": "script"
+              },
+              {
+                "config": {
+                  "script": "\tself.getSibling(\"Table\").refreshBinding(\"props.data\")"
+                },
+                "scope": "G",
+                "type": "script"
+              }
+            ]
+          }
+        },
+        "meta": {
+          "name": "Delete Button"
+        },
+        "position": {
+          "height": 0.0425,
+          "width": 0.1,
+          "x": 0.3574,
+          "y": 0.9371
+        },
+        "propConfig": {
+          "props.enabled": {
+            "binding": {
+              "config": {
+                "expression": "if({session.custom.Roles.Admin},true,false)"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "text": "Delete"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "HDes"
+        },
+        "position": {
+          "height": 0.0538,
+          "width": 0.1038,
+          "x": 0.0353,
+          "y": 0.7694
+        },
+        "props": {
+          "style": {
+            "borderStyle": "solid",
+            "fill": "#FFE8CC",
+            "stroke": "#FFCA8A"
+          },
+          "text": " HDes"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "HCount-TextField"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.1875,
+          "x": 0.1874,
+          "y": 0.8661
+        },
+        "props": {
+          "style": {
+            "overflowWrap": "normal",
+            "textAlign": "center",
+            "textOverflow": "ellipsis"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Table"
+        },
+        "position": {
+          "height": 0.3925,
+          "width": 0.9313,
+          "x": 0.0412,
+          "y": 0.1236
+        },
+        "propConfig": {
+          "props.data": {
+            "binding": {
+              "config": {
+                "polling": {
+                  "enabled": true,
+                  "rate": "2"
+                },
+                "queryPath": "Q3 - SELECT"
+              },
+              "type": "query"
+            }
+          }
+        },
+        "props": {
+          "pager": {
+            "bottom": false
+          }
+        },
+        "type": "ia.display.table"
+      },
+      {
+        "meta": {
+          "name": "HID-TextField"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.1875,
+          "x": 0.1887,
+          "y": 0.5762
+        },
+        "props": {
+          "style": {
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "mode": "percent",
+      "style": {
+        "fill": "#FFE8CC",
+        "stroke": "#FFCA8A"
+      }
+    },
+    "type": "ia.container.coord"
+  }
+}

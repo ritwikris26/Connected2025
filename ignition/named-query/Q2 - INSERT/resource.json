@@ -1,0 +1,55 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "NewConnection",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "aafd55cc2203be499f250eec1abcd1240ec60623d77c387b5e3011d3a31cd9b9",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "Ishita",
+      "timestamp": "2025-03-28T08:54:48Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "HID",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "HName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "HDes",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "HCount",
+        "sqlType": 7
+      }
+    ]
+  }
+}

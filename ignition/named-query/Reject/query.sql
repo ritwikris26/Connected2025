@@ -1,0 +1,1 @@
+DELETE FROM Request WHERE RID = :RID

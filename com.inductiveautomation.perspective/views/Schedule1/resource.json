@@ -1,0 +1,17 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "thumbnail.png",
+    "view.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "Ishita",
+      "timestamp": "2025-04-23T03:22:11Z"
+    },
+    "lastModificationSignature": "b5d54ad2bb05b290c93822636b0dbb4d891d1e364871d105be3ec2e2518c7774"
+  }
+}
