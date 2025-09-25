@@ -606,9 +606,9 @@
           "name": "EquipmentSchedule"
         },
         "position": {
-          "height": 0.4817,
+          "height": 0.3619,
           "width": 1,
-          "y": 0.51
+          "y": 0.6587
         },
         "propConfig": {
           "props.scheduledEvents": {
