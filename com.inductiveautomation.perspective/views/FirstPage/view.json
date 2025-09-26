@@ -577,9 +577,9 @@
         },
         "position": {
           "height": 0.3619,
-          "width": 1,
-          "x": 0.0077,
-          "y": 0.6196
+          "width": 0.5988,
+          "x": 0.4089,
+          "y": 0.6199
         },
         "propConfig": {
           "props.scheduledEvents": {
