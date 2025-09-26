@@ -47,54 +47,6 @@
       },
       {
         "meta": {
-          "name": "SimpleGauge_0"
-        },
-        "position": {
-          "height": 0.4433,
-          "width": 0.2122,
-          "x": 0.041,
-          "y": 0.5572
-        },
-        "props": {
-          "animate": true,
-          "arc": {
-            "color": "#0000FF"
-          },
-          "arcBackground": {
-            "color": "#FFFF8A"
-          },
-          "endAngle": 405,
-          "label": {
-            "offsetY": 12
-          },
-          "startAngle": 135,
-          "style": {
-            "borderStyle": "solid"
-          },
-          "value": 100
-        },
-        "type": "ia.chart.simple-gauge"
-      },
-      {
-        "meta": {
-          "name": "Label_1"
-        },
-        "position": {
-          "height": 0.0897,
-          "rotate": {
-            "anchor": "25% 50%"
-          },
-          "width": 0.0331,
-          "x": 0.3049,
-          "y": 0.3819
-        },
-        "props": {
-          "text": "KLtr"
-        },
-        "type": "ia.display.label"
-      },
-      {
-        "meta": {
           "name": "Label_2"
         },
         "position": {
