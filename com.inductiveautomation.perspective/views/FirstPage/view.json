@@ -47,24 +47,6 @@
       },
       {
         "meta": {
-          "name": "Label_1"
-        },
-        "position": {
-          "height": 0.0897,
-          "rotate": {
-            "anchor": "25% 50%"
-          },
-          "width": 0.0331,
-          "x": 0.3049,
-          "y": 0.3819
-        },
-        "props": {
-          "text": "KLtr"
-        },
-        "type": "ia.display.label"
-      },
-      {
-        "meta": {
           "name": "Label_2"
         },
         "position": {
