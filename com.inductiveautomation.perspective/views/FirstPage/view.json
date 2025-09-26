@@ -47,36 +47,6 @@
       },
       {
         "meta": {
-          "name": "SimpleGauge_0"
-        },
-        "position": {
-          "height": 0.4433,
-          "width": 0.2122,
-          "x": 0.0945,
-          "y": 0.3677
-        },
-        "props": {
-          "animate": true,
-          "arc": {
-            "color": "#0000FF"
-          },
-          "arcBackground": {
-            "color": "#FFFF8A"
-          },
-          "endAngle": 405,
-          "label": {
-            "offsetY": 12
-          },
-          "startAngle": 135,
-          "style": {
-            "borderStyle": "solid"
-          },
-          "value": 100
-        },
-        "type": "ia.chart.simple-gauge"
-      },
-      {
-        "meta": {
           "name": "Label_1"
         },
         "position": {
