@@ -578,7 +578,8 @@
         "position": {
           "height": 0.3619,
           "width": 1,
-          "y": 0.6587
+          "x": 0.0077,
+          "y": 0.6196
         },
         "propConfig": {
           "props.scheduledEvents": {
