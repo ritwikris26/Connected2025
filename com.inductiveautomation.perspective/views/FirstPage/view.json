@@ -11,36 +11,6 @@
     "children": [
       {
         "meta": {
-          "name": "SimpleGauge"
-        },
-        "position": {
-          "height": 0.4433,
-          "width": 0.2122,
-          "x": -0.0062,
-          "y": 0.164
-        },
-        "props": {
-          "animate": true,
-          "arc": {
-            "color": "#FF0000"
-          },
-          "arcBackground": {
-            "color": "#00FFFF"
-          },
-          "endAngle": 405,
-          "label": {
-            "offsetY": 12
-          },
-          "startAngle": 135,
-          "style": {
-            "borderStyle": "solid"
-          },
-          "value": 100
-        },
-        "type": "ia.chart.simple-gauge"
-      },
-      {
-        "meta": {
           "name": "Label"
         },
         "position": {
@@ -82,8 +52,8 @@
         "position": {
           "height": 0.4433,
           "width": 0.2122,
-          "x": 0.2177,
-          "y": 0.184
+          "x": 0.041,
+          "y": 0.5572
         },
         "props": {
           "animate": true,
@@ -607,8 +577,9 @@
         },
         "position": {
           "height": 0.3619,
-          "width": 1,
-          "y": 0.6587
+          "width": 0.5988,
+          "x": 0.4089,
+          "y": 0.6199
         },
         "propConfig": {
           "props.scheduledEvents": {
